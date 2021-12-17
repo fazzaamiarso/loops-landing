@@ -5,8 +5,401 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loops Landing</title>
     <script type="module" defer src="/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="font-alata">
+    <!-- Header-->
+    <header
+      class="absolute z-50 px-6 py-8 w-full flex items-center md:px-12 lg:px-32"
+    >
+      <img src="./images/logo.svg" alt="logo" class="mr-auto" />
+      <button id="open" class="md:hidden">
+        <img src="./images/icon-hamburger.svg" alt="menu icon" class="inline" />
+      </button>
+      <nav class="">
+        <ul class="hidden md:flex gap-8 text-white font-josefin text-md">
+          <li class="border-white/0 border-b-2 hover:border-b-white">
+            <a href="#">About</a>
+          </li>
+          <li class="border-white/0 border-b-2 hover:border-b-white">
+            <a href="#">Careers</a>
+          </li>
+          <li class="border-white/0 border-b-2 hover:border-b-white">
+            <a href="#">Events</a>
+          </li>
+          <li class="border-white/0 border-b-2 hover:border-b-white">
+            <a href="#">Products</a>
+          </li>
+          <li class="border-white/0 border-b-2 hover:border-b-white">
+            <a href="#">Support</a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="mobileNav" class="hidden fixed z-10 inset-0 bg-black py-12 px-8">
+        <div class="mb-16 flex">
+          <img src="./images/logo.svg" alt="logo" class="mr-auto" />
+          <button id="close">
+            <img
+              src="./images/icon-close.svg"
+              alt="close icon"
+              class="inline"
+            />
+          </button>
+        </div>
+        <ul class="text-white text-xl font-josefin space-y-4">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CAREERS</a></li>
+          <li><a href="#">EVENTS</a></li>
+          <li><a href="#">PRODUCTS</a></li>
+          <li><a href="#">SUPPORT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- -->
+    <main class="">
+      <!-- Main Content-->
+      <!--Hero-->
+      <section class="relative">
+        <img
+          class="sm:hidden"
+          src="./images/mobile/image-hero.jpg"
+          alt="Hero image"
+        />
+        <img
+          class="hidden sm:block"
+          src="./images/desktop/image-hero.jpg"
+          alt="Hero image"
+        />
+        <div
+          class="
+            absolute
+            z-10
+            top-1/2
+            left-1/2
+            -translate-x-1/2 -translate-y-1/2
+            border-white border-2
+            p-4
+            w-10/12
+            max-w-sm
+            md:left-1/3
+            lg:max-w-xl lg:p-8
+          "
+        >
+          <h1 class="font-josefin text-white text-4xl pr-8 lg:text-6xl">
+            IMMERSIVE EXPERIENCES THAT DELIVER
+          </h1>
+        </div>
+      </section>
+      <!---->
+      <!-- Text-->
+      <section
+        class="
+          relative
+          my-16
+          w-10/12
+          mx-auto
+          flex flex-col
+          items-center
+          lg:items-start lg:w-max lg:-left-[10%] lg:my-24
+        "
+      >
+        <div class="mb-8 max-w-2 xl">
+          <img
+            class="sm:hidden"
+            src="./images/mobile/image-interactive.jpg"
+            alt="interactive"
+          />
+          <img
+            class="hidden sm:block"
+            src="./images/desktop/image-interactive.jpg"
+            alt="interactive"
+          />
+        </div>
+        <div
+          class="
+            bg-white
+            text-center
+            max-w-lg
+            lg:absolute lg:-bottom-6 lg:-right-1/3 lg:p-10 lg:text-left
+          "
+        >
+          <h2 class="font-josefin text-3xl mb-4 lg:text-5xl">
+            THE LEADER IN INTERACTIVE VR
+          </h2>
+          <p class="text-darkGray">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+      <!---->
+      <!--Creations-->
+      <section
+        class="
+          w-10/12
+          mx-auto
+          flex flex-col
+          items-center
+          gap-8
+          mb-20
+          md:items-stretch
+        "
+      >
+        <div class="flex justify-between items-center">
+          <h2 class="text-3xl font-josefin">OUR CREATIONS</h2>
+          <button
+            class="
+              hidden
+              md:block
+              font-alata
+              border-black border-2
+              tracking-wider
+              py-2
+              px-8
+              hover:bg-black hover:text-white
+            "
+          >
+            SEE ALL
+          </button>
+        </div>
+        <ul class="grid grid-cols-1 gap-8 w-full md:grid-cols-4">
+          <li class="group card">
+            <img
+              src="./images/mobile/image-deep-earth.jpg"
+              alt="people play soccer"
+              class="object-cover md:hidden"
+            />
+            <img
+              src="./images/desktop/image-deep-earth.jpg"
+              alt="people play soccer"
+              class="hidden md:block object-cover"
+            />
+
+            <p class="paragraph">
+              DEEP<br />
+              EARTH
+            </p>
+            <div class="shadow"></div>
+          </li>
+          <li class="group card">
+            <img
+              src="./images/mobile/image-night-arcade.jpg"
+              alt="people play soccer"
+              class="object-cover md:hidden"
+            />
+            <img
+              src="./images/desktop/image-night-arcade.jpg"
+              alt="people play soccer"
+              class="hidden md:block object-cover"
+            />
+
+            <p class="paragraph">
+              NIGHT <br />
+              ARCADE
+            </p>
+            <div class="shadow"></div>
+          </li>
+          <li class="group card">
+            <img
+              src="./images/mobile/image-soccer-team.jpg"
+              alt="people play soccer"
+              class="object-cover md:hidden"
+            />
+            <img
+              src="./images/desktop/image-soccer-team.jpg"
+              alt="people play soccer"
+              class="hidden md:block object-cover"
+            />
+
+            <p class="paragraph">
+              SOCCER <br />
+              TEAM VR
+            </p>
+            <div class="shadow"></div>
+          </li>
+          <li class="group card">
+            <img
+              src="./images/mobile/image-grid.jpg"
+              alt="people play soccer"
+              class="object-cover md:hidden"
+            />
+            <img
+              src="./images/desktop/image-grid.jpg"
+              alt="people play soccer"
+              class="hidden md:block object-cover"
+            />
+
+            <p class="paragraph">
+              THE <br />
+              GRID
+            </p>
+            <div class="shadow"></div>
+          </li>
+          <li class="group card">
+            <img
+              src="./images/mobile/image-from-above.jpg"
+              alt="people play soccer"
+              class="object-cover md:hidden"
+            />
+            <img
+              src="./images/desktop/image-from-above.jpg"
+              alt="people play soccer"
+              class="hidden md:block object-cover"
+            />
+
+            <p class="paragraph">
+              FROM UP <br />
+              ABOVE VR
+            </p>
+            <div class="shadow"></div>
+          </li>
+          <li class="group card">
+            <img
+              src="./images/mobile/image-pocket-borealis.jpg"
+              alt="people play soccer"
+              class="object-cover md:hidden"
+            />
+            <img
+              src="./images/desktop/image-pocket-borealis.jpg"
+              alt="people play soccer"
+              class="hidden md:block object-cover"
+            />
+
+            <p class="paragraph">
+              POCKET <br />
+              BOREALIS
+            </p>
+            <div class="shadow"></div>
+          </li>
+          <li class="group card">
+            <img
+              src="./images/mobile/image-curiosity.jpg"
+              alt="people play soccer"
+              class="object-cover md:hidden"
+            />
+            <img
+              src="./images/desktop/image-curiosity.jpg"
+              alt="people play soccer"
+              class="hidden md:block object-cover"
+            />
+
+            <p class="paragraph">
+              THE <br />
+              CURIOSITY
+            </p>
+            <div class="shadow"></div>
+          </li>
+          <li class="group card">
+            <img
+              src="./images/mobile/image-fisheye.jpg"
+              alt="people play soccer"
+              class="object-cover md:hidden"
+            />
+            <img
+              src="./images/desktop/image-fisheye.jpg"
+              alt="people play soccer"
+              class="hidden md:block object-cover"
+            />
+
+            <p class="paragraph">
+              MAKE IT <br />
+              FISHEYE
+            </p>
+            <div class="shadow"></div>
+          </li>
+        </ul>
+
+        <button
+          class="
+            md:hidden
+            font-alata
+            border-black border-2
+            tracking-wider
+            py-2
+            px-8
+            hover:bg-black hover:text-white
+          "
+        >
+          SEE ALL
+        </button>
+      </section>
+      <!---->
+    </main>
+    <!---->
+    <!-- Footer-->
+    <footer
+      class="
+        flex flex-col
+        gap-12
+        p-12
+        items-center
+        bg-black
+        text-white
+        mx-auto
+        md:flex-row md:justify-between
+      "
+    >
+      <section class="flex flex-col">
+        <div class="mb-8 h-5">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <nav>
+          <ul class="flex flex-col items-center gap-4 text-sm md:flex-row">
+            <li class="pb-2 border-b-2 border-black hover:border-white">
+              <a href="#">About</a>
+            </li>
+            <li class="pb-2 border-b-2 border-black hover:border-white">
+              <a href="#">Careers</a>
+            </li>
+            <li class="pb-2 border-b-2 border-black hover:border-white">
+              <a href="#">Events</a>
+            </li>
+            <li class="pb-2 border-b-2 border-black hover:border-white">
+              <a href="#">Products</a>
+            </li>
+            <li class="pb-2 border-b-2 border-black hover:border-white">
+              <a href="#">Support</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section
+        class="flex flex-col items-center gap-4 md:items-end md:justify-between"
+      >
+        <ul class="flex gap-4">
+          <li class="pb-2 border-b-2 border-black hover:border-white">
+            <a href="#"
+              ><img src="./images/icon-facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li class="pb-2 border-b-2 border-black hover:border-white">
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="twitter"
+            /></a>
+          </li>
+          <li class="pb-2 border-b-2 border-black hover:border-white">
+            <a href="#"
+              ><img src="./images/icon-pinterest.svg" alt="pinterest"
+            /></a>
+          </li>
+          <li class="pb-2 border-b-2 border-black hover:border-white">
+            <a href="#"
+              ><img src="./images/icon-instagram.svg" alt="intsagram"
+            /></a>
+          </li>
+        </ul>
+        <p class="text-sm text-darkGray">
+          &copy; 2021 Loopstudios. All rights reserved.
+        </p>
+      </section>
+    </footer>
+    <!---->
   </body>
 </html>
